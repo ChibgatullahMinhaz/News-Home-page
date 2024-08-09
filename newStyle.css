@@ -1,0 +1,135 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto&display=swap");
+
+/* variables */
+:root {
+    /* Primary colors  */
+    --Softorange: hsl(35, 77%, 62%);
+    --Soft-red: hsl(5, 85%, 63%);
+    /* natural colors  */
+    --Off-white: hsl(36, 100%, 99%);
+    --Grayishblue: hsl(233, 8%, 79%);
+    --Dark-grayish-blue: hsl(236, 13%, 42%);
+    --Very-dark-blue: hsl(240, 100%, 5%);
+}
+
+/* reset codes */
+* {
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+    list-style: none;
+    text-align: center;
+    text-decoration: none;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+
+p {
+    font-size: 0.9rem;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+.flex-space-betwen {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+
+/* reset codes */
+
+/* navber */
+nav {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.logo_sec img {
+    color: var(--Very-dark-blue);
+    cursor: pointer;
+}
+
+.nav_list {
+    margin: 1rem;
+    color: var(--Dark-grayish-blue);
+}
+
+.nav_link {
+    transition: all 0.3s ease-in;
+    color: var(--Dark-grayish-blue);
+}
+
+.nav_link:hover {
+    color: var(--Softorange);
+    border-bottom: 1px solid var(--Softorange);
+}
+
+/* nav ends here  */
+/* responsive  */
+/* nav btn starts here */
+.open_btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+.close_btn {
+    display: none;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
+/* nav btn ends here */
+
+/* tablets */
+@media screen and (max-width: 1024px) {}
+
+/* tablets */
+@media screen and (max-width: 892px) {}
+
+/* table low resulation */
+@media screen and (max-width: 767px) {
+    .open_btn {
+        display: block;
+    }
+
+    .nav_item_sec {
+        display: none;
+        position: relative;
+        background-color: aliceblue;
+        border: 1px solid var(--Dark-grayish-blue);
+    }
+
+    .nav_item {
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        top: 0;
+        right: 10px;
+        text-align: justify;
+    }
+}
+
+/* smart phone  */
+@media screen and (max-width: 500px) {}
+
+/* small screen */
+@media screen and (max-width: 375px) {}
